@@ -1,7 +1,7 @@
 # SAP Analytics Portfolio  
 **SAP Analytics Cloud | SAP BW/4HANA | Integrated Planning**
 
-Designed and implemented as hands-on system configurations in SAP Analytics Cloud and SAP BW/4HANA training environments to simulate real-world enterprise analytics and planning scenarios.
+Designed and implemented as hands-on end-to-end configurations in SAP Analytics Cloud and SAP BW/4HANA within a structured SAP learning environment, simulating enterprise-grade analytics and planning scenarios.
 
 This repository contains selected SAP Analytics implementation projects demonstrating end-to-end dashboard development, planning configuration, data actions, allocations, KPI modeling, and BW live integration.
 
