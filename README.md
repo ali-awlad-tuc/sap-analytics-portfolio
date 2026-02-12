@@ -11,8 +11,8 @@ The focus is on translating business requirements into scalable analytics soluti
 
 | # | Project | Focus Area | Core Capabilities |
 |---|---------|------------|------------------|
-| 01 | SAC Sales Performance Analytics | Executive KPI Reporting | KPI modeling, geo analytics, drill-down analysis, live data integration |
-| 02 | SAC Predictive Analytics | Regression & Insight Generation | Smart Predict modeling, influencer analysis, validation & forecasting |
+| 01 | SAC Sales Performance Analytics | Executive KPI Reporting | SAC semantic model, KPI framework, conditional formatting, geo analysis, drill-down & analytic application |
+| 02 | SAC Predictive Analytics | Regression & Insight Generation | Smart Predict regression scenario, model evaluation (RMSE/validation), influencer analysis, prediction output & story visualization |
 | 03 | SAC Integrated Planning | Integrated Planning & Forecasting | Version management, driver-based planning, allocations, governance |
 | 04 | BW/4HANA Data Warehousing | Data Warehousing & Transformation | Data staging concepts, transformation logic, layered architecture |
 | 05 | BW/4HANA Data Modeling + Datasphere | Data Modeling & Cloud Integration | InfoProviders, modeling strategy, cloud integration readiness |
@@ -45,7 +45,7 @@ The focus is on translating business requirements into scalable analytics soluti
 - Governance via locks and validation  
 
 ### Data & Integration Understanding
-- BW/4HANA live connectivity concepts  
+- BW/4HANA connectivity concepts  
 - Semantic modeling foundations  
 - Datasphere integration readiness  
 - S/4HANA process awareness for analytics design  
@@ -56,7 +56,7 @@ The focus is on translating business requirements into scalable analytics soluti
 
 The solutions were developed within a structured SAP Analytics environment using enterprise-style business scenarios.
 
-All dashboards, planning models, predictive models, and data configurations were independently designed and implemented to simulate real SAP project delivery standards.
+All dashboards, predictive models, and data configurations were independently designed and implemented to simulate real SAP project delivery standards.
 
 The system environment was provided by erp4students for educational purposes.
 
@@ -64,5 +64,5 @@ The system environment was provided by erp4students for educational purposes.
 
 ## Author
 
-**Md Ali Awlad**  
+Md Ali Awlad  
 SAP Analytics & BW/4HANA Portfolio
