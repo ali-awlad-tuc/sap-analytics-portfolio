@@ -1,100 +1,160 @@
-# Sales Performance Analytics Dashboard (SAP Analytics Cloud)
+# 01 — Sales Performance Analytics  
+SAP Analytics Cloud (Model-Based Implementation)
 
-## Project Overview
+## Business Objective
 
-This project presents an interactive Sales Performance Analytics solution built in **SAP Analytics Cloud (SAC)**.
+Design and implement an executive-level Sales Performance Analytics solution in SAP Analytics Cloud using a structured data model.
 
-The solution provides executive-level reporting, KPI monitoring, geo-analysis, and drill-down capabilities to analyze revenue, profit, and regional performance.
+The objective was to provide interactive KPI transparency across regions, product groups, and time periods while enabling dynamic drill-down and performance monitoring.
 
----
+The solution addresses common enterprise reporting challenges:
 
-## Objectives
-
-- Analyze revenue and profit performance
-- Compare regional sales (Germany & USA)
-- Monitor KPIs using conditional formatting
-- Enable executive-level drill-down analysis
-- Provide geographic visualization of sales distribution
+- Fragmented reporting across departments  
+- Manual spreadsheet-based KPI tracking  
+- Limited drill-down capabilities  
+- Lack of standardized KPI visualization  
 
 ---
 
-## Tools & Technologies
+## Architecture Overview
 
-- SAP Analytics Cloud (SAC)
-- Story-based dashboards
-- Conditional Formatting
-- Geo Maps
-- Interactive Filters
-- Trellis Charts
+![Architecture](images/architecture/sac-sales-architecture.png)
 
----
+### Conceptual Flow
 
-# Executive Sales Dashboard
+Enterprise Dataset (Imported into SAC Model)  
+→ SAC Data Model  
+→ SAC Stories & Analytic Application  
+→ Business Users (Sales & Management)
 
-Multi-page executive reporting including:
-
-- Revenue & Quantity performance
-- Regional comparison (Germany North/South, USA East/West)
-- Product & customer drill-down
-- Trellis regional comparison
-- KPI indicators (OK / Warning / Critical)
-
-![Executive Dashboard](screenshots/01-executive-performance-dashboard.png)
+The solution demonstrates a structured SAC model-based reporting architecture where analytics are built on a governed data model within SAP Analytics Cloud.
 
 ---
 
-# KPI Conditional Formatting
+## Solution Scope
 
-Visual performance indicators applied to product groups and measures.
+The implemented solution includes:
 
-- Traffic light indicators
-- Hierarchical drill-down
-- Performance thresholds
-
-![KPI Conditional Formatting](screenshots/02-kpi-conditional-formatting.png)
-
----
-
-# Geo Analysis
-
-Interactive geographic visualization of:
-
-- Customer locations
-- Sales office locations
-- Regional sales distribution
-
-![Geo Analysis](screenshots/03-geo-analysis.png)
+- Executive KPI overview dashboard  
+- Revenue and profit performance monitoring  
+- Regional comparison (e.g., Germany & USA)  
+- Conditional KPI highlighting  
+- Time-series analysis and variance comparison  
+- Geographic visualization of sales distribution  
+- Interactive analytic application for enhanced exploration  
 
 ---
 
-# Analytic Application
+## KPI Framework
 
-Interactive analytic application with:
+Core KPIs implemented:
 
-- Region-based filtering
-- Chart/Table toggle
-- Dynamic product group selection
+- Revenue  
+- Profit  
+- Profit %  
+- Regional performance contribution  
+- Time-based performance comparison  
 
-![Analytic Application](screenshots/04-analytic-application.png)
+Conditional formatting was applied to highlight:
 
----
+- Underperforming regions  
+- KPI threshold deviations  
+- Significant positive or negative variances  
 
-## Key Features
-
-✔ Interactive drill navigation  
-✔ Dynamic filtering  
-✔ KPI performance tracking  
-✔ Regional comparison via trellis charts  
-✔ Executive-level storytelling  
+This enables fast management-level interpretation.
 
 ---
 
-## Author
-Md Ali Awlad  
-SAP Analytics Portfolio Project
+## Advanced Story Capabilities Implemented
+
+- Time-series comparison and period analysis  
+- Ranking and contribution analysis  
+- Dynamic calculations within stories  
+- Advanced filtering (product, region, time)  
+- Cross-chart filtering interactions  
+- Drill-down from aggregated to detailed levels  
+
+These capabilities extend the solution beyond static reporting into interactive analytics.
 
 ---
 
-## Acknowledgment
+## Dashboard Evidence
 
-This project was developed using the SAP Analytics Cloud training environment provided by erp4students.
+### Executive Performance Overview
+
+![Executive Dashboard](images/screenshots/01-executive-performance-dashboard.png)
+
+Aggregated KPI visibility designed for management consumption.
+
+---
+
+### Conditional KPI Monitoring
+
+![Conditional Formatting](images/screenshots/02-kpi-conditional-formatting.png)
+
+Threshold-based visual cues for performance monitoring.
+
+---
+
+### Geographic Sales Analysis
+
+![Geo Analysis](images/screenshots/03-geo-analysis.png)
+
+Geo mapping for spatial sales performance analysis.
+
+---
+
+### Analytic Application Layer
+
+![Analytic Application](images/screenshots/04-analytic-application.png)
+
+Enhanced interaction layer providing:
+
+- Advanced filtering controls  
+- Dynamic user-driven analysis  
+- Interactive regional exploration  
+
+---
+
+## Technical Implementation Summary
+
+- Data model created within SAP Analytics Cloud  
+- Structured dimensions (Product, Region, Time, Customer)  
+- KPI measures defined and validated  
+- Conditional formatting rules configured  
+- Time-series and comparison charts implemented  
+- Geographic dimension enabled  
+- Analytic Application created for interactive analysis  
+
+---
+
+## Design Principles Applied
+
+- Separation between data model and presentation layer  
+- KPI-driven storytelling  
+- Structured filter logic  
+- Executive-oriented layout design  
+- Interactive drill and cross-filter capability  
+
+---
+
+## Enterprise Value Perspective
+
+- Centralized sales performance visibility  
+- Reduced reliance on manual reporting  
+- Improved regional performance monitoring  
+- Faster identification of performance deviations  
+- Reusable reporting blueprint for enterprise analytics  
+
+---
+
+## Skills Demonstrated
+
+- SAP Analytics Cloud Story Design  
+- SAC Model configuration  
+- KPI modeling and validation  
+- Conditional formatting and threshold logic  
+- Time-series and ranking analysis  
+- Geo analytics configuration  
+- Analytic Application development  
+- Executive-level dashboard architecture  
