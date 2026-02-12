@@ -19,15 +19,20 @@ This implementation reflects how predictive analytics can complement traditional
 
 ## Architecture Overview
 
-### Predictive Flow
+![Architecture](images/architecture/sac-predictive-architecture.png)
 
-Structured Dataset (Imported into SAC)  
-→ Smart Predict Regression Model  
+### Predictive Workflow Architecture
+
+Structured Technical Dataset (Imported into SAP Analytics Cloud)  
+→ SAP Analytics Cloud – Smart Predict Regression Model  
 → Model Evaluation & Influencer Analysis  
-→ Generated Prediction Dataset  
-→ Analytical Story Visualization  
+→ Generated Prediction Output Dataset  
+→ SAC Analytical Story Visualization  
 
-The solution demonstrates a complete predictive workflow within SAP Analytics Cloud, from data preparation to insight visualization.
+The solution demonstrates an end-to-end predictive analytics workflow within SAP Analytics Cloud. 
+
+The architecture separates data preparation, predictive modeling, validation, interpretability, and visualization layers, ensuring transparency, reproducibility, and business-oriented insight delivery.
+
 
 ---
 
