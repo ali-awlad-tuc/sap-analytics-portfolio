@@ -1,105 +1,84 @@
 # SAP Analytics Portfolio
 
-SAP Analytics Cloud (SAC) | SAP BW/4HANA | Integrated Planning
+SAP Analytics Cloud (SAC) | SAP BW/4HANA | Integrated Planning | Predictive Analytics
 
-This portfolio showcases end-to-end SAP Analytics implementations covering executive reporting, integrated planning, and predictive modeling using SAP Analytics Cloud and SAP BW/4HANA.
+This portfolio showcases end-to-end SAP Analytics implementations covering executive reporting, integrated planning, and regression-based predictive modeling using SAP Analytics Cloud and SAP BW/4HANA.
 
-The solutions simulate enterprise-grade analytics scenarios and demonstrate practical configuration, modeling, and business-driven dashboard development.
-
----
-
-## Portfolio Objective
-
-To design and implement business-driven analytics and planning solutions using SAP Analytics Cloud and SAP BW/4HANA, following enterprise modeling standards and best practices.
-
-Focus areas include:
-
-- Executive Sales Performance Reporting
-- Contribution Margin Analytics
-- Integrated Sales Planning & Forecasting
-- Predictive Analytics (Regression Modeling)
-- Data Actions & Allocation Logic
-- Version Management & Variance Analysis
-- BW/4HANA Live Connectivity
+The solutions simulate enterprise-grade analytics scenarios and demonstrate practical configuration, modeling logic, and business-driven dashboard development.
 
 ---
 
-# Project Overview
+## Project Overview
 
 ---
 
-## 1️⃣ Sales Performance Analytics  
+### 1️⃣ Sales Performance Analytics  
 **SAC Story + SAP BW/4HANA Live Connection**
 
-This solution focuses on delivering executive-level performance transparency with drill-down capability, KPI-driven monitoring, and real-time BW live integration.
+Executive-level performance dashboard providing real-time transparency across revenue, contribution margin, regional performance, and KPI-based monitoring.
 
-🔹 Revenue & Quantity performance analysis  
-🔹 Regional breakdown (Germany / USA)  
-🔹 Product & customer drill-down  
-🔹 KPI conditional formatting  
-🔹 Trellis regional comparison  
-🔹 Geo analytics integration  
-🔹 Analytic application with dynamic filtering  
+Key capabilities:
+- Revenue & Quantity trend analysis  
+- Contribution margin insights  
+- Regional trellis comparison (Germany / USA)  
+- KPI conditional formatting  
+- Geo-based sales visualization  
+- Analytic application with dynamic filtering  
+- BW/4HANA live integration  
 
-### Screenshots
+### Full project documentation:  
+`01-sales-performance-analytics/`
 
-![Executive Dashboard](01-sales-performance-analytics/screenshots/01-executive-performance-dashboard.png)
+Preview:
 
-![KPI Table](01-sales-performance-analytics/screenshots/02-kpi-conditional-formatting.png)
-
-![Geo Analysis](01-sales-performance-analytics/screenshots/03-geo-analysis.png)
-
-![Analytic App](01-sales-performance-analytics/screenshots/04-analytic-application.png)
+![Sales Dashboard Preview](01-sales-performance-analytics/screenshots/01-executive-performance-dashboard.png)
 
 ---
 
-## 2️⃣ Predictive Analytics – Regression Model  
+### 2️⃣ Predictive Analytics – Regression Model  
 **SAP Analytics Cloud Smart Predict**
 
-This implementation demonstrates regression-based predictive modeling and statistical validation within SAP Analytics Cloud Smart Predict.
+Regression-based predictive modeling with statistical validation and feature influence analysis.
 
-🔹 Dataset preparation and feature structuring  
-🔹 Linear regression modeling  
-🔹 Training vs validation partitioning  
-🔹 RMSE evaluation  
-🔹 Prediction confidence analysis  
-🔹 Influencer contribution ranking  
-🔹 Predicted vs actual comparison  
-🔹 Feature category impact analysis  
+Key capabilities:
+- Dataset preparation & feature structuring  
+- Linear regression modeling  
+- Training vs validation partitioning  
+- RMSE & prediction confidence evaluation  
+- Influencer contribution ranking  
+- Predicted vs actual comparison  
+- Feature category impact analysis  
 
-### Screenshots
+### Full project documentation:  
+`02-predictive-analytics-regression/`
 
-![Model Performance](02-predictive-analytics-regression/screenshots/02-model-performance-overview.png)
+Preview:
 
-![Influencer Analysis](02-predictive-analytics-regression/screenshots/03-influencer-analysis.png)
-
-![Predicted vs Actual](02-predictive-analytics-regression/screenshots/04-predicted-vs-actual.png)
-
-![Feature Category](02-predictive-analytics-regression/screenshots/05-feature-category-impact.png)
+![Predictive Model Preview](02-predictive-analytics-regression/screenshots/02-model-performance-overview.png)
 
 ---
 
-# Core Skills & Technologies
+## Core Skills & Technologies
 
 ### SAP Analytics Cloud
-- Story Design & Advanced Layouts
-- Analytic Applications
-- Smart Predict (Regression)
-- Planning Models & Version Control
-- Data Actions & Multi Actions
-- Allocations & Driver-Based Logic
-- KPI Modeling & Restricted Measures
+- Story Design & Advanced Layouts  
+- Analytic Applications  
+- Smart Predict (Regression)  
+- Planning Models & Version Control  
+- Data Actions & Multi Actions  
+- Allocation Logic & Driver-Based Planning  
+- KPI Modeling & Restricted Measures  
 
 ### SAP BW/4HANA
-- Live Data Connectivity
-- Analytical Data Modeling
-- Aggregation Logic
+- Live Data Connectivity  
+- Analytical Data Modeling  
+- Aggregation Logic  
 
 ### Business Competencies
-- Executive Reporting
-- Forecasting & Scenario Planning
-- Variance Analysis
-- Performance Management Design
+- Executive Reporting  
+- Forecasting & Scenario Planning  
+- Variance Analysis  
+- Performance Management Design  
 
 ---
 
@@ -112,7 +91,6 @@ SAP Analytics & Planning Portfolio
 
 ## Acknowledgment
 
-The projects were implemented in an SAP Analytics Cloud training environment provided by ERP4Students for educational purposes.
+The projects were implemented in an SAP Analytics Cloud training environment provided by erp4students for educational purposes.
 
 All business cases are based on simulated enterprise scenarios.
-
