@@ -1,108 +1,100 @@
-# Sales Performance Analytics & Predictive Reporting  
-**SAP Analytics Cloud | SAP BW/4HANA Live Connection**
+# Sales Performance Analytics Dashboard (SAP Analytics Cloud)
+
+## Project Overview
+
+This project presents an interactive Sales Performance Analytics solution built in **SAP Analytics Cloud (SAC)**.
+
+The solution provides executive-level reporting, KPI monitoring, geo-analysis, and drill-down capabilities to analyze revenue, profit, and regional performance.
 
 ---
 
-## 1. Project Overview
+## Objectives
 
-This project demonstrates the implementation of an executive Sales Performance Analytics solution in SAP Analytics Cloud based on SAP BW/4HANA live data integration.
-
-The objective was to design an interactive reporting layer on top of existing BW models, enabling management-level transparency into revenue performance, contribution margin development, regional distribution, and predictive trend analysis.
-
----
-
-## 2. Architecture
-
-SAP BW/4HANA (Analytical Model)  
-→ Live Connection  
-→ SAP Analytics Cloud Story & Analytic Application  
-
-- Data Source: Existing SAP BW Sales Model  
-- Connection Type: Live (no data replication)  
-- Reporting Layer: SAC Story & Analytic Application  
-- Predictive Layer: SAC Forecasting & Smart Predict Regression  
+- Analyze revenue and profit performance
+- Compare regional sales (Germany & USA)
+- Monitor KPIs using conditional formatting
+- Enable executive-level drill-down analysis
+- Provide geographic visualization of sales distribution
 
 ---
 
-## 3. Implemented Functional Scope
+## Tools & Technologies
 
-### 3.1 Executive Sales Dashboard
-
-- Multi-page executive reporting story
-- Revenue and Quantity performance analysis
-- Regional breakdown (Germany North/South, USA East/West)
-- Product group and customer drill-down
-- Trellis chart for regional comparison
-- Conditional formatting with performance indicators
-- Dynamic filtering and drill navigation
+- SAP Analytics Cloud (SAC)
+- Story-based dashboards
+- Conditional Formatting
+- Geo Maps
+- Interactive Filters
+- Trellis Charts
 
 ---
 
-### 3.2 KPI Modeling & Variance Analysis
+# Executive Sales Dashboard
 
-- Contribution Margin calculation
-- Margin % KPI
-- Year-over-Year comparison
-- Time-series revenue analysis
-- Ranking logic (Top/Bottom performance)
-- Conditional alert indicators (OK / Warning / Critical)
+Multi-page executive reporting including:
 
----
+- Revenue & Quantity performance
+- Regional comparison (Germany North/South, USA East/West)
+- Product & customer drill-down
+- Trellis regional comparison
+- KPI indicators (OK / Warning / Critical)
 
-### 3.3 Forecasting & Predictive Analytics
-
-Implemented predictive capabilities directly within SAC:
-
-- Time-series forecasting using:
-  - Linear Regression
-  - Triple Exponential Smoothing
-- Forecast confidence evaluation
-- RMSE analysis
-- Smart Predict regression scenario
-- Influencer contribution analysis
-- Predicted vs. Actual comparison
-
-The predictive model achieved strong confidence levels and enabled identification of key revenue drivers.
+![Executive Dashboard](screenshots/01-executive-performance-dashboard.png)
 
 ---
 
-### 3.4 Analytic Application Development
+# KPI Conditional Formatting
 
-In addition to standard stories, an Analytic Application was developed to:
+Visual performance indicators applied to product groups and measures.
 
-- Enhance user interaction
-- Enable dynamic parameter-driven filtering
-- Provide extended control over data visualization
-- Improve executive usability
+- Traffic light indicators
+- Hierarchical drill-down
+- Performance thresholds
 
----
-
-## 4. Key Business Insights (Simulated Scenario)
-
-- Regional revenue fluctuations identified via trellis comparison
-- Margin erosion detected in selected product segments
-- Top-performing sales regions consistently exceeded forecast baseline
-- Influencer analysis identified core manufacturing and processing parameters impacting revenue prediction
+![KPI Conditional Formatting](screenshots/02-kpi-conditional-formatting.png)
 
 ---
 
-## 5. Technical Capabilities Demonstrated
+# Geo Analysis
 
-- SAP Analytics Cloud Story Design
-- BW/4HANA Live Model Consumption
-- KPI Modeling & Calculated Measures
-- Time-Series & Variance Logic
-- Forecasting & Predictive Scenario Configuration
-- Smart Predict Regression Modeling
-- Analytic Application Development
-- Conditional Formatting & Performance Indicators
+Interactive geographic visualization of:
+
+- Customer locations
+- Sales office locations
+- Regional sales distribution
+
+![Geo Analysis](screenshots/03-geo-analysis.png)
 
 ---
 
-## 6. Lessons Learned
+# Analytic Application
 
-- Live BW integration requires careful measure aggregation validation
-- Forecast model selection significantly impacts prediction confidence
-- Executive dashboards must balance clarity with analytical depth
-- Predictive scenarios enhance strategic planning visibility
+Interactive analytic application with:
 
+- Region-based filtering
+- Chart/Table toggle
+- Dynamic product group selection
+
+![Analytic Application](screenshots/04-analytic-application.png)
+
+---
+
+## Key Features
+
+✔ Interactive drill navigation  
+✔ Dynamic filtering  
+✔ KPI performance tracking  
+✔ Regional comparison via trellis charts  
+✔ Executive-level storytelling  
+
+---
+
+## Author
+Md Ali Awlad  
+SAP Analytics Portfolio Project
+
+---
+
+## Acknowledgment
+
+This project was developed using the SAP Analytics Cloud training environment provided by erp4students.
