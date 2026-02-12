@@ -20,14 +20,12 @@ The solution addresses common enterprise reporting challenges:
 
 ![Architecture](images/architecture/sac-sales-architecture.png)
 
-### Conceptual Flow
+### Reporting Flow
 
-Enterprise Dataset (Imported into SAC Model)  
-→ SAC Data Model  
-→ SAC Stories & Analytic Application  
-→ Business Users (Sales & Management)
-
-The solution demonstrates a structured SAC model-based reporting architecture where analytics are built on a governed data model within SAP Analytics Cloud.
+Enterprise Sales Dataset (Imported into SAC Model)  
+→ SAP Analytics Cloud – Semantic Data Model  
+→ SAC Stories & Analytic Application Layer  
+→ Business Consumers (Sales & Management)
 
 ---
 
@@ -118,7 +116,7 @@ Enhanced interaction layer providing:
 
 ## Technical Implementation Summary
 
-- Data model created within SAP Analytics Cloud  
+- Semantic data model configured within SAP Analytics Cloud  
 - Structured dimensions (Product, Region, Time, Customer)  
 - KPI measures defined and validated  
 - Conditional formatting rules configured  
