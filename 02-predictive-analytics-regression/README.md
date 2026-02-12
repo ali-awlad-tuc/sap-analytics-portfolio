@@ -1,74 +1,114 @@
-# Predictive Analytics & Regression Modeling
+# Predictive Analytics – Regression Model (SAP Analytics Cloud)
 
-**SAP Analytics Cloud – Smart Predict | Regression Scenario**
+## Project Overview
 
----
+This project demonstrates a regression-based predictive analytics model built in **SAP Analytics Cloud (Smart Predict)**.
 
-## 1. Project Overview
-
-This project demonstrates the implementation of a regression-based predictive model using SAP Analytics Cloud Smart Predict.
-
-The objective was to predict a target KPI based on multiple influencing variables and evaluate model performance using statistical validation metrics.
-
-The focus of this implementation was not only prediction accuracy but also model explainability and performance interpretation.
+The model predicts processor performance based on technical specifications such as core count, frequency, cache size, power consumption, and manufacturing process.
 
 ---
 
-## 2. Modeling Approach
+## Objectives
 
-- Scenario Type: Regression
-- Tool: SAP Analytics Cloud – Smart Predict
-- Method Used: Automated Linear Regression
-- Data Partitioning: Training & Validation Split
-- Model Evaluation Metrics:
-  - Root Mean Square Error (RMSE)
-  - Prediction Confidence
-  - Validation Comparison (Predicted vs Actual)
+- Build and train a regression model
+- Evaluate model performance
+- Analyze feature influence
+- Compare predicted vs actual results
+- Understand variable impact on performance
 
 ---
 
-## 3. Model Performance Evaluation
+## Tools & Technologies
 
-The model performance was assessed using:
-
-- RMSE to measure prediction error
-- Prediction Confidence to evaluate reliability
-- Predicted vs. Actual comparison chart
-- Training vs. Validation statistics
-- Influencer contribution ranking
-
-These metrics ensured transparency and statistical robustness of the predictive model.
+- SAP Analytics Cloud (Smart Predict)
+- Regression Model
+- Model Evaluation Metrics
+- Feature Contribution Analysis
 
 ---
 
-## 4. Key Insights
+# Dataset Overview
 
-- Identified the most influential variables affecting the target KPI
-- Evaluated model accuracy using validation dataset
-- Interpreted prediction intervals and error boundaries
-- Compared predicted and actual values to validate reliability
+The dataset includes processor specifications:
 
-The influencer contribution analysis provided explainability of the regression model, supporting data-driven decision-making.
+- Number of Cores
+- Frequency (GHz)
+- Cache (MB)
+- Power (W)
+- Manufacturing (nm)
+- Target: Performance Score
 
----
-
-## 5. Business Relevance
-
-This implementation demonstrates how predictive analytics can:
-
-- Support forecasting and scenario planning
-- Identify key drivers behind performance indicators
-- Improve decision-making using statistical validation
-- Translate predictive modeling into actionable business insights
+![Dataset Structure](screenshots/01-dataset-structure.png)
 
 ---
 
-## 6. Technical Skills Demonstrated
+# Model Performance Overview
 
-- SAP Analytics Cloud Smart Predict
-- Regression Modeling
-- Model Validation & Evaluation
-- Statistical Interpretation
-- Influencer Contribution Analysis
-- Predictive KPI Modeling
+Evaluation metrics:
+
+- Root Mean Square Error (RMSE)
+- Prediction Confidence
+- Training vs Validation comparison
+
+![Model Performance](screenshots/02-model-performance-overview.png)
+
+---
+
+# Influencer Analysis
+
+Feature importance ranking showing contribution impact:
+
+- Manufacturing Process
+- Number of Cores
+- Cache Size
+- Introduction Year
+- Frequency
+
+![Influencer Analysis](screenshots/03-influencer-analysis.png)
+
+---
+
+# Predicted vs Actual
+
+Comparison between:
+
+- Perfect Model
+- Validation Actual
+- Error Boundaries
+
+![Predicted vs Actual](screenshots/04-predicted-vs-actual.png)
+
+---
+
+# Feature Category Impact
+
+Grouped category analysis to understand:
+
+- Performance impact by feature ranges
+- Distribution patterns
+- Validation behavior
+
+![Feature Category Impact](screenshots/05-feature-category-impact.png)
+
+---
+
+## Key Insights
+
+✔ Manufacturing process has highest predictive impact  
+✔ Core count strongly influences performance  
+✔ Model shows strong validation consistency  
+✔ RMSE indicates good prediction accuracy  
+
+---
+
+## Author
+
+Md Ali Awlad  
+Predictive Analytics Portfolio Project
+
+---
+
+## Acknowledgment
+
+This project was developed using the SAP Analytics Cloud training environment provided by erp4students.
 
