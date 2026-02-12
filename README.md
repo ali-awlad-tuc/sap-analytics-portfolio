@@ -65,5 +65,4 @@ The system environment was provided by erp4students for educational purposes.
 ## Author
 
 **Md Ali Awlad**  
-SAP Analytics & BW/4HANA Consultant
-
+SAP Analytics & BW/4HANA Portfolio
