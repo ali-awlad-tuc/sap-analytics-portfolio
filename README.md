@@ -1,96 +1,69 @@
-# SAP Analytics Portfolio
+# SAP Enterprise Analytics Portfolio  
+SAP Analytics Cloud | SAP BW/4HANA | Datasphere | S/4HANA Integration
 
-SAP Analytics Cloud (SAC) | SAP BW/4HANA | Integrated Planning | Predictive Analytics
+This repository showcases structured SAP Analytics implementations covering executive reporting, integrated planning, predictive modeling, and BW-based integration within the SAP ecosystem.
 
-This portfolio showcases end-to-end SAP Analytics implementations covering executive reporting, integrated planning, and regression-based predictive modeling using SAP Analytics Cloud and SAP BW/4HANA.
-
-The solutions simulate enterprise-grade analytics scenarios and demonstrate practical configuration, modeling logic, and business-driven dashboard development.
-
----
-
-## Project Overview
+The focus is on translating business requirements into scalable analytics solutions using SAP Analytics Cloud and BW-based architectures.
 
 ---
 
-### 1️⃣ Sales Performance Analytics  
-**SAC Story + SAP BW/4HANA Live Connection**
+## Portfolio Overview
 
-Executive-level performance dashboard providing real-time transparency across revenue, contribution margin, regional performance, and KPI-based monitoring.
-
-Key capabilities:
-- Revenue & Quantity trend analysis  
-- Contribution margin insights  
-- Regional trellis comparison (Germany / USA)  
-- KPI conditional formatting  
-- Geo-based sales visualization  
-- Analytic application with dynamic filtering  
-- BW/4HANA live integration  
-
-### Full project documentation:  
-`01-sales-performance-analytics/`
-
-Preview:
-
-![Sales Dashboard Preview](01-sales-performance-analytics/screenshots/01-executive-performance-dashboard.png)
+| # | Project | Focus Area | Core Capabilities |
+|---|---------|------------|------------------|
+| 01 | SAC Sales Performance Analytics | Executive KPI Reporting | KPI modeling, geo analytics, drill-down analysis, live data integration |
+| 02 | SAC Predictive Analytics | Regression & Insight Generation | Smart Predict modeling, influencer analysis, validation & forecasting |
+| 03 | SAC Integrated Planning | Integrated Planning & Forecasting | Version management, driver-based planning, allocations, governance |
+| 04 | BW/4HANA Data Warehousing | Data Warehousing & Transformation | Data staging concepts, transformation logic, layered architecture |
+| 05 | BW/4HANA Data Modeling + Datasphere | Data Modeling & Cloud Integration | InfoProviders, modeling strategy, cloud integration readiness |
+| 06 | S/4HANA End-to-End Processes | Business Process Integration | Order-to-Cash, Procure-to-Pay analytics integration perspective |
 
 ---
 
-### 2️⃣ Predictive Analytics – Regression Model  
-**SAP Analytics Cloud Smart Predict**
+## Architecture Principles Applied Across Projects
 
-Regression-based predictive modeling with statistical validation and feature influence analysis.
-
-Key capabilities:
-- Dataset preparation & feature structuring  
-- Linear regression modeling  
-- Training vs validation partitioning  
-- RMSE & prediction confidence evaluation  
-- Influencer contribution ranking  
-- Predicted vs actual comparison  
-- Feature category impact analysis  
-
-### Full project documentation:  
-`02-predictive-analytics-regression/`
-
-Preview:
-
-![Predictive Model Preview](02-predictive-analytics-regression/screenshots/02-model-performance-overview.png)
+- Clear separation between data foundation, semantic layer, and consumption layer  
+- KPI-driven analytics aligned with enterprise performance management  
+- Planning logic structured around versions, governance, and repeatable calculations  
+- Integration-aware modeling considering BW and S/4 architectural context  
+- Transparent calculation logic and structured model configuration  
 
 ---
 
-## Core Skills & Technologies
+## Core Capability Areas
 
-### SAP Analytics Cloud
-- Story Design & Advanced Layouts  
-- Analytic Applications  
-- Smart Predict (Regression)  
-- Planning Models & Version Control  
-- Data Actions & Multi Actions  
-- Allocation Logic & Driver-Based Planning  
-- KPI Modeling & Restricted Measures  
+### Analytics
+- SAP Analytics Cloud Stories & Analytic Applications  
+- KPI framework design and threshold logic  
+- Geo analytics and drill-based storytelling  
+- Smart Predict regression modeling  
 
-### SAP BW/4HANA
-- Live Data Connectivity  
-- Analytical Data Modeling  
-- Aggregation Logic  
+### Planning
+- SAC Planning model configuration  
+- Version management (Plan / Forecast / Simulation)  
+- Data Actions and allocation logic  
+- Governance via locks and validation  
 
-### Business Competencies
-- Executive Reporting  
-- Forecasting & Scenario Planning  
-- Variance Analysis  
-- Performance Management Design  
+### Data & Integration Understanding
+- BW/4HANA live connectivity concepts  
+- Semantic modeling foundations  
+- Datasphere integration readiness  
+- S/4HANA process awareness for analytics design  
+
+---
+
+## Implementation Context
+
+The solutions were developed within a structured SAP Analytics environment using enterprise-style business scenarios.
+
+All dashboards, planning models, predictive models, and data configurations were independently designed and implemented to simulate real SAP project delivery standards.
+
+The system environment was provided by erp4students for educational purposes.
 
 ---
 
 ## Author
 
-Md Ali Awlad  
-SAP Analytics & Planning Portfolio
+**Md Ali Awlad**  
+SAP Analytics & BW/4HANA Consultant
 
----
-
-## Acknowledgment
-
-The projects were implemented in an SAP Analytics Cloud training environment provided by erp4students for educational purposes.
-
-All business cases are based on simulated enterprise scenarios.
