@@ -17,7 +17,7 @@ The focus is on translating business requirements into scalable, governance-read
 | 02 | SAC Predictive Analytics | Regression & Insight Generation | Smart Predict modeling, influencer analysis, validation |
 | 03 | SAC Integrated Planning & Forecasting | Enterprise Planning Architecture | Version management, allocations, multi actions, forecasting |
 | 04 | BW/4HANA Enterprise Data Foundation | Layered Data Warehouse Architecture | ADSO staging, InfoCube modeling, CompositeProvider, BW Query |
-| 05 | BW/4HANA Advanced Modeling | (Upcoming) | Enterprise semantic modeling & integration |
+| 05 | BW/4HANA & SAP Datasphere Hybrid Integration | (Upcoming) | Enterprise semantic modeling & integration |
 | 06 | S/4HANA Business Process Analytics | (Upcoming) | Process-driven analytics integration |
 
 ---
@@ -86,7 +86,7 @@ Layered enterprise data warehouse architecture integrating SAP ERP Controlling d
 
 # Upcoming Projects
 
-## 05 — BW/4HANA Advanced Modeling & Integration  
+## 05 — BW/4HANA & SAP Datasphere Hybrid Integration  
 Planned focus:
 - Advanced semantic modeling strategies  
 - Data virtualization concepts  
