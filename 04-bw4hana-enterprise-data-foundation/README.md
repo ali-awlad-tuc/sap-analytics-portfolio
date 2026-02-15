@@ -1,11 +1,9 @@
 # 04 — BW/4HANA Enterprise Data Foundation  
-SAP BW/4HANA – Layered Enterprise Data Warehouse Architecture  
-
----
+SAP BW/4HANA – Layered Enterprise Data Warehouse Architecture
 
 ## Business Objective
 
-Design and implement a structured enterprise data warehouse solution using SAP BW/4HANA, integrating SAP ERP (CO module) data into a harmonized analytical model for Plan vs Actual cost analysis.
+Design and implement a structured enterprise data warehouse solution using **SAP BW/4HANA**, integrating **SAP ERP (CO module)** data into a harmonized analytical model for **Plan vs Actual** cost analysis.
 
 The objective was to:
 
@@ -17,7 +15,7 @@ The objective was to:
 - Deliver BW Queries for reporting  
 - Expose data to SAP Analytics Cloud for visualization  
 
-This implementation reflects a classical layered enterprise data warehouse architecture built on SAP BW/4HANA principles.
+This implementation reflects a classical **layered enterprise data warehouse architecture** built on BW/4HANA principles.
 
 ---
 
@@ -25,14 +23,14 @@ This implementation reflects a classical layered enterprise data warehouse archi
 
 ![Architecture](images/architecture/architecture-bw4hana-layered.png)
 
-### Layered Enterprise Data Foundation Architecture
+### BW/4HANA Layered Architecture Flow
 
 SAP ERP (CO Module)  
 → BW Staging Layer (ADSO)  
 → Core Data Warehouse Layer (InfoCubes / Core ADSO)  
 → Semantic Layer (CompositeProvider)  
 → BW Query Layer  
-→ SAP Analytics Cloud (Live Connection)  
+→ SAP Analytics Cloud (Live Connection)
 
 The architecture separates acquisition, modeling, semantic harmonization, reporting, and consumption layers, ensuring scalability, governance, and maintainability.
 
@@ -44,12 +42,12 @@ The architecture separates acquisition, modeling, semantic harmonization, report
 
 Source data includes:
 
-- Actual Cost Postings (COEP)
-- Plan Cost Data
-- Cost Centers
-- Cost Elements
-- Fiscal Year / Period
-- Version (Plan / Actual)
+- Actual Cost Postings (COEP)  
+- Plan Cost Data  
+- Cost Centers  
+- Cost Elements  
+- Fiscal Year / Period  
+- Version (Plan / Actual)  
 
 ---
 
@@ -83,7 +81,11 @@ Modeled using harmonized InfoObjects:
 - Version (Plan / Actual)  
 - Currency  
 - Controlling Area  
-- Key Figures (Amount, Quantity)
+
+Key Figures:
+
+- Amount  
+- Quantity  
 
 ![Core ADSO Structure](images/screenshots/05-adso-core-structure.png)
 
@@ -125,7 +127,7 @@ Reusable InfoObjects ensure semantic consistency across models.
 
 ![Request Data](images/screenshots/10-core-adso-browser-request-data.png)
 
-Ensures technical and business-level validation of loaded data.
+This ensures technical and business-level validation of loaded data.
 
 ---
 
