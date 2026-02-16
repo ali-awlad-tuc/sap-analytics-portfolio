@@ -1,160 +1,175 @@
 # SAP Enterprise Analytics Portfolio  
-SAP Analytics Cloud | SAP BW/4HANA | SAP Datasphere | Hybrid Enterprise Architecture  
+**Enterprise Reporting | Planning | Predictive | BW/4HANA | Hybrid Datasphere Integration**
 
-This repository presents enterprise-style SAP Analytics implementations covering executive reporting, predictive modeling, integrated planning, layered data warehousing, and hybrid BW–Datasphere integration.
+---
 
-Each project represents an independent solution designed around realistic enterprise scenarios and implemented using SAP technologies.
+## About This Portfolio
 
-The focus is on building scalable, governance-ready analytics architectures across on-premise and cloud environments.
+This repository presents structured, enterprise-style SAP analytics implementations across reporting, planning, predictive modeling, and hybrid data architecture.
+
+Each project simulates a realistic enterprise delivery scenario and follows layered architecture principles — from data acquisition to semantic modeling and executive analytics consumption.
+
+The focus is on designing scalable, governance-ready analytics solutions within the SAP ecosystem.
+
+---
+
+## Professional Focus
+
+- SAP Analytics Cloud (Reporting & Planning)  
+- Enterprise KPI Framework Design  
+- SAP BW/4HANA Layered Data Modeling  
+- Hybrid BW–Datasphere Architecture  
+- Governance-Oriented Analytics Design  
+- End-to-End Integration Awareness  
 
 ---
 
 ## Portfolio Overview
 
-| # | Project | Focus Area | Core Capabilities |
-|---|---------|------------|------------------|
-| 01 | SAC Sales Performance Analytics | Executive KPI Reporting | KPI modeling, geo analytics, drill-down analysis |
-| 02 | SAC Predictive Analytics | Regression & Insight Generation | Smart Predict modeling, influencer analysis, validation |
-| 03 | SAC Integrated Planning & Forecasting | Enterprise Planning Architecture | Version management, allocations, multi actions, forecasting |
-| 04 | BW/4HANA Enterprise Data Foundation | Layered Data Warehouse Architecture | ADSO staging, InfoCube modeling, CompositeProvider, BW Query |
-| 05 | BW/4HANA → Datasphere Integration | Hybrid On-Prem & Cloud Architecture | LSA++, ODP Delta, HANA Calc View, Datasphere modeling |
-| 06 | S/4HANA Business Process Analytics | (Upcoming) | Process-driven analytics integration |
+| # | Project | Focus Area | Key Architecture Elements |
+|---|----------|------------|---------------------------|
+| 01 | SAC Sales Performance Analytics | Executive Reporting | KPI modeling, geo analytics, drill-down design |
+| 02 | SAC Predictive Analytics | Regression Modeling | Smart Predict, validation, influencer analysis |
+| 03 | SAC Integrated Planning & Forecasting | Enterprise Planning | Versioning, allocations, forecasting, governance |
+| 04 | BW/4HANA Enterprise Data Foundation | Data Warehouse Architecture | ADSO staging, CompositeProvider, BW Query |
+| 05 | BW/4HANA → SAP Datasphere Integration | Hybrid Architecture | LSA++, HANA Calc View, Cloud replication |
 
 ---
 
 # Completed Projects
 
+---
+
 ## 01 — SAC Sales Performance Analytics  
-Folder: `01-sac-sales-performance-analytics`
+**Executive KPI Reporting Architecture**
 
-Executive reporting solution built in SAP Analytics Cloud using structured data modeling.
+Enterprise-style reporting solution built in SAP Analytics Cloud using structured modeling and interactive dashboards.
 
-**Key focus areas:**
-- KPI-driven dashboard design  
+**Highlights**
+
+- KPI-driven performance monitoring  
 - Conditional formatting and threshold logic  
-- Regional and product-level drill-down  
+- Regional and product drill-down  
 - Geo analytics integration  
-- Executive storytelling layout  
+- Executive storytelling design  
 
 ---
 
 ## 02 — SAC Predictive Analytics (Regression Model)  
-Folder: `02-sac-predictive-analytics`
+**Predictive Modeling & Interpretability**
 
-Regression-based predictive analytics model built using SAP Analytics Cloud Smart Predict.
+Regression-based predictive analytics solution using Smart Predict.
 
-**Key focus areas:**
+**Highlights**
+
 - Model training and validation  
 - Influencer analysis  
-- Predicted vs Actual comparison  
-- Feature contribution interpretation  
+- Predicted vs Actual evaluation  
+- Confidence interval interpretation  
 - Integration of predictive output into reporting  
 
 ---
 
 ## 03 — SAC Integrated Planning & Forecasting  
-Folder: `03-sac-integrated-planning`
+**Enterprise Planning Architecture**
 
-Integrated enterprise planning architecture combining Sales Planning, Cost Center Planning, and Predictive Forecasting.
+Integrated planning solution combining sales planning, cost center planning, and forecasting.
 
-**Key focus areas:**
+**Highlights**
+
 - Multi-model planning structure  
+- Version management (Plan / Actual / Forecast)  
 - Data Actions and Advanced Formulas  
-- Driver-based allocations  
+- Allocation logic  
 - Multi Action orchestration  
 - Time-series forecasting  
 - Governance via validation rules and data locking  
-- Scenario simulation with Value Driver Tree  
 
 ---
 
 ## 04 — BW/4HANA Enterprise Data Foundation  
-Folder: `04-bw4hana-enterprise-data-foundation`
+**Layered Data Warehouse Architecture**
 
-Layered enterprise data warehouse architecture integrating SAP ERP Controlling data with SAP Analytics Cloud.
+Enterprise data warehouse architecture integrating SAP ERP controlling data with SAP Analytics Cloud.
 
-**Key focus areas:**
+**Highlights**
+
 - ADSO staging and harmonization  
 - Transformation and DTP configuration  
 - Core InfoCube modeling (Plan vs Actual)  
 - CompositeProvider semantic layer  
 - BW Query variance modeling  
 - Live SAC integration  
-- Technical governance and monitoring  
+- Technical monitoring and governance  
 
 ---
 
-## 05 — BW/4HANA to SAP Datasphere Integration  
-Folder: `05-bw4hana-datasphere-integration`
+## 05 — BW/4HANA → SAP Datasphere Integration  
+**Hybrid On-Prem and Cloud Analytics Architecture**
 
-Hybrid enterprise data architecture integrating SAP BW/4HANA with SAP Datasphere for cloud-based semantic modeling.
+Hybrid enterprise architecture combining governed BW foundation with modern cloud-based semantic modeling.
 
-**Key focus areas:**
-- ODP Delta extraction from SAP S/4HANA  
-- LSA++ layered BW modeling  
-- CompositeProvider semantic unification  
+**Highlights**
+
+- ODP delta extraction from S/4HANA  
+- LSA++ layered modeling  
+- CompositeProvider semantic design  
 - SAP HANA Star Join Calculation View  
-- Datasphere Replication Flow  
-- Fact & Dimension modeling in Datasphere  
-- Analytic Model for cloud consumption  
-- Hybrid on-premise and cloud governance  
-
----
-
-# Upcoming Project
-
-## 06 — S/4HANA Business Process Analytics  
-Planned focus:
-- End-to-end business process analytics  
-- Order-to-Cash & Procure-to-Pay integration perspective  
-- Process-driven reporting architecture  
-- Integration-aware analytics design  
+- Datasphere replication flow  
+- Fact and Dimension modeling  
+- Analytic Model for cloud analytics consumption  
 
 ---
 
 # Architecture Principles Applied
 
-Across all projects, the following principles were applied:
+Across all projects, the following principles were consistently applied:
 
-- Clear separation between data acquisition, modeling, semantic, and consumption layers  
-- Layered LSA++ architecture in BW/4HANA  
-- Hybrid on-premise and cloud integration patterns  
-- KPI-driven and business-aligned analytics design  
-- Governance-aware configuration (validation, versioning, monitoring)  
+- Layered architecture  
+  (Source → Staging → Core → Semantic → Consumption)
+
+- Clear separation between data modeling and reporting layers  
+
+- Governance-aware configuration  
+  (Validation, Versioning, Monitoring)
+
 - Reusable and scalable modeling structures  
+
+- Integration-ready design  
+
+- KPI-driven business alignment  
 
 ---
 
 # Core Capability Areas
 
-## Analytics
-- SAP Analytics Cloud (Stories & Analytic Applications)  
-- KPI framework development  
+### Analytics & Reporting
+- SAP Analytics Cloud Stories and Analytic Applications  
+- KPI Framework Development  
 - Geo analytics  
-- Predictive modeling (Smart Predict)  
+- Drill-down design  
 
-## Planning
-- SAC Planning model configuration  
-- Version management  
+### Planning & Forecasting
+- SAC Planning Model Configuration  
+- Version Management  
 - Data Actions and Advanced Formulas  
-- Allocation logic  
-- Forecasting configuration  
+- Allocation Modeling  
+- Forecast Configuration  
 
-## Data & Enterprise Architecture
-- SAP BW/4HANA modeling  
-- ADSO and InfoCube design  
-- LSA++ layered architecture  
-- CompositeProvider modeling  
+### Data Architecture & Integration
+- SAP BW/4HANA Modeling  
+- ADSO and InfoCube Design  
+- CompositeProvider Modeling  
+- Transformation and DTP Configuration  
 - SAP HANA Calculation Views  
-- SAP Datasphere modeling  
-- ODP Delta integration  
-- Hybrid BW–Cloud architecture design  
+- SAP Datasphere Modeling  
+- Hybrid On-Prem and Cloud Architecture  
 
 ---
 
 # Repository Structure
 
-Each project folder contains:
+Each project folder includes:
 
 - Architecture diagram  
 - Structured screenshots  
@@ -168,9 +183,9 @@ Each project folder contains:
 
 # Implementation Context
 
-The solutions were developed within structured SAP environments using enterprise-style business scenarios.
+Solutions were developed within structured SAP learning environments designed to simulate enterprise delivery standards.
 
-All architectures, models, planning configurations, predictive scenarios, and dashboards were independently implemented to reflect real-world SAP analytics project standards.
+Business cases are modeled as realistic enterprise scenarios and independently implemented following professional SAP project practices.
 
 The system environment was provided by erp4students for educational purposes.
 
@@ -178,5 +193,5 @@ The system environment was provided by erp4students for educational purposes.
 
 # Author
 
-Md Ali Awlad  
-SAP Enterprise Analytics Portfolio  
+**Md Ali Awlad**  
+SAP Enterprise Analytics Portfolio
