@@ -1,24 +1,24 @@
 # 05 — BW/4HANA to SAP Datasphere Integration  
-SAP BW/4HANA – Hybrid On-Prem & Cloud Analytics Architecture
+SAP BW/4HANA – Hybrid Enterprise Data & Cloud Analytics Architecture  
 
 ---
 
 ## Business Objective
 
-Design and implement a hybrid enterprise analytics architecture integrating **SAP BW/4HANA** with **SAP Datasphere**, enabling cloud-based semantic modeling while preserving a governed on-premise enterprise data warehouse foundation.
+Design and implement a hybrid enterprise analytics architecture integrating **SAP BW/4HANA (on-premise)** with **SAP Datasphere (cloud)** to enable scalable cloud-based semantic modeling while preserving a governed enterprise data warehouse foundation.
 
 The objective was to:
 
 - Extract delta-enabled sales data from SAP S/4HANA  
 - Implement LSA++ layered modeling in BW/4HANA  
-- Model harmonized InfoObjects and reporting ADSOs  
-- Build CompositeProvider for semantic unification  
-- Create SAP HANA Calculation View (Star Join)  
-- Replicate BW data into SAP Datasphere  
-- Build Fact and Dimension Views in Datasphere  
-- Deliver an Analytic Model for cloud analytics  
+- Build harmonized InfoObjects and reporting ADSOs  
+- Create CompositeProvider for semantic unification  
+- Develop SAP HANA Calculation View (Star Join)  
+- Replicate governed BW data into SAP Datasphere  
+- Model Fact and Dimension Views in Datasphere  
+- Deliver a cloud-ready Analytic Model for reporting  
 
-This implementation demonstrates a **hybrid enterprise data architecture** combining BW governance with modern cloud analytics modeling.
+This project demonstrates a **hybrid enterprise data architecture** combining BW governance with modern cloud analytics capabilities.
 
 ---
 
@@ -26,10 +26,10 @@ This implementation demonstrates a **hybrid enterprise data architecture** combi
 
 ![Architecture](images/architecture/05_bw4hana_to_datasphere_end_to_end_architecture.png)
 
-### Hybrid Architecture Flow
+### Hybrid Enterprise Architecture Flow
 
 SAP S/4HANA  
-→ BW/4HANA Data Acquisition Layer  
+→ BW/4HANA Data Acquisition (ODP Delta)  
 → LSA++ Data Warehouse Layer  
 → CompositeProvider (Semantic Layer)  
 → SAP HANA Calculation View (Star Join)  
@@ -37,6 +37,8 @@ SAP S/4HANA
 → Datasphere Fact & Dimension Modeling  
 → Analytic Model  
 → SAP Analytics Cloud  
+
+This layered design separates acquisition, harmonization, semantic modeling, cloud replication, and analytics consumption.
 
 ---
 
@@ -54,37 +56,46 @@ Source objects include:
 
 ![ODP Delta DataSource](images/screenshots/02-odp-delta-datasource.png)
 
+Delta-enabled extraction ensures incremental, production-ready integration.
+
 ---
 
 ## Data Acquisition Layer (BW/4HANA)
 
-### ADSO – Staging Layer
+### ADSO – Staging & Delta Handling
 
 Responsible for:
 
 - ODP DataSource (Delta Enabled)  
-- Transformations (Field Mapping & Derivations)  
-- DTP Execution (Delta Load)  
-- Process Chain (Scheduling & Automation)  
+- Transformation logic (field mapping & derivations)  
+- DTP execution (delta load)  
+- Process Chain scheduling & monitoring  
 
 ![ADSO Layered Design](images/screenshots/06-adso-layered-design.png)
 
+This layer ensures controlled ingestion and governed data movement.
+
 ---
 
-## Data Warehouse Layer (LSA++)
+## Data Warehouse Layer (LSA++ Architecture)
 
-### BW/4HANA Modeling
+### Layered Modeling Strategy
 
-- ADSO (Corporate Memory)  
+- ADSO (Corporate Memory Layer)  
 - ADSO (Reporting / Data Mart Layer)  
 - Harmonized InfoObjects  
-  - Customer  
-  - Material  
-  - Organization  
-  - Time  
-  - Units / Currency  
+
+Core dimensions:
+
+- Customer  
+- Material  
+- Organization  
+- Time  
+- Currency / Units  
 
 ![LSA Mapping](images/screenshots/04-lsa-layer-mapping.png)
+
+The LSA++ pattern separates persistence, harmonization, and reporting layers for scalability.
 
 ---
 
@@ -92,11 +103,13 @@ Responsible for:
 
 ### CompositeProvider
 
-- Logical join of Sales Header & Item  
-- Harmonized Key Figures  
-- BW Query ready structure  
+- Logical join of Sales Header & Sales Item  
+- Harmonized key figures  
+- Reporting-ready structure  
 
 ![End-to-End BW Flow](images/screenshots/01-bw-sales-end-to-end-flow.png)
+
+Acts as the semantic bridge between data warehouse and analytics layers.
 
 ---
 
@@ -104,11 +117,14 @@ Responsible for:
 
 ### Calculation View (Star Join Model)
 
-- Fact: Sales (Header + Item)  
+- Fact Table: Sales (Header + Item)  
 - Dimensions: Customer, Material  
-- SQL/Semantic Consumption Ready  
+- Star Join structure  
+- Consumption-ready semantic model  
 
 ![HANA Star Join](images/screenshots/08-hana-star-join-calcview.png)
+
+Enhances flexibility and enables cloud-based modeling compatibility.
 
 ---
 
@@ -116,33 +132,36 @@ Responsible for:
 
 ### Replication Flow
 
-Data replicated from BW/HANA into Datasphere:
+Data replicated from BW/HANA into SAP Datasphere:
 
-- Sales Header → Local Table  
-- Sales Item → Local Table  
-- Customer Master → Local Table  
-- Material Master → Local Table  
+- Sales Header  
+- Sales Item  
+- Customer Master  
+- Material Master  
 
 ![Replication Flow](images/screenshots/09_datasphere_replication_flow_sales_data.png)
 
+Controlled replication ensures alignment between on-prem and cloud layers.
+
 ---
 
-## SAP Datasphere – Modeling
+## SAP Datasphere – Data Modeling
 
 ### Fact View (Sales)
 
-- Join Header + Item  
-- Filters & Calculations  
-- Sales Fact structure  
+- Join Header & Item  
+- Applied filters & calculations  
+- Structured fact modeling  
 
 ![Fact View](images/screenshots/10_datasphere_fact_view_sales.png)
 
 ---
 
-### Customer Dimension
+### Dimension Modeling (Customer)
 
-- Master Data Modeling  
-- Key & Text Attributes  
+- Master data modeling  
+- Key & text attributes  
+- Associative relationships  
 
 ![Customer Dimension](images/screenshots/11_datasphere_dimension_view_customer.png)
 
@@ -156,7 +175,8 @@ Includes:
 
 - Measures: Net Value, Cost, Margin  
 - Associations: Customer, Material  
-- Ready for consumption  
+- Analytical aggregation logic  
+- Ready for SAC consumption  
 
 ![Analytic Model](images/screenshots/12_datasphere_analytic_model_sales_analysis.png)
 
@@ -168,61 +188,65 @@ Includes:
 
 ![Sales Query Preview](images/screenshots/07-sales-query-preview.png)
 
-Ensures reconciliation and validation before cloud replication.
+Used for reconciliation and validation prior to cloud replication.
 
 ---
 
 ## Technical Governance
 
-Technical controls implemented:
+Controls implemented across layers:
 
 - ODP Delta Monitoring  
 - DTP & Process Chain Monitoring  
-- Replication Flow Monitoring (Datasphere)  
+- Datasphere Replication Flow Monitoring  
 - Data Validation & Reconciliation  
-- Role-Based Authorization (BW + Datasphere)  
+- Role-Based Authorization (BW & Datasphere)  
+
+Ensures enterprise-grade reliability and auditability.
 
 ---
 
 ## Technical Implementation Summary
 
-- ODP Delta DataSource Configuration  
-- ADSO Layered Design (LSA++)  
-- CompositeProvider Modeling  
+- ODP Delta DataSource configuration  
+- LSA++ layered ADSO modeling  
+- CompositeProvider semantic design  
 - SAP HANA Star Join Calculation View  
-- SAP Datasphere Replication Flow  
-- Fact & Dimension Modeling  
-- Analytic Model Development  
+- Datasphere Replication Flow setup  
+- Fact & Dimension View modeling  
+- Analytic Model development  
+- SAC consumption readiness  
 
 ---
 
 ## Design Principles Applied
 
-- Layered LSA++ Architecture  
-- Clear Separation of Staging & Reporting  
-- Hybrid On-Prem & Cloud Integration  
-- Reusable Semantic Modeling  
-- Governed Data Replication  
-- Enterprise-Ready Architecture Design  
+- LSA++ layered architecture  
+- Clear separation of staging and reporting  
+- Hybrid on-prem & cloud integration  
+- Reusable semantic modeling  
+- Governed replication and validation  
+- Enterprise-scalable architecture design  
 
 ---
 
 ## Enterprise Value Perspective
 
-- Enables gradual cloud transition  
-- Preserves BW enterprise governance  
-- Delivers modern analytics capabilities  
-- Hybrid architecture blueprint for organizations  
-- Scalable & extensible design  
+- Enables controlled cloud transition  
+- Preserves BW governance and harmonization  
+- Provides modern cloud-native analytics modeling  
+- Supports hybrid enterprise data strategy  
+- Scalable and extensible integration blueprint  
 
 ---
 
 ## Skills Demonstrated
 
-- SAP BW/4HANA Modeling  
+- SAP BW/4HANA LSA++ Modeling  
 - ADSO & CompositeProvider Design  
 - ODP Delta Integration  
 - SAP HANA Calculation View Modeling  
-- SAP Datasphere Replication & Modeling  
-- Analytic Model Design  
-- Hybrid Enterprise Data Architecture  
+- SAP Datasphere Replication Flow  
+- Fact & Dimension Modeling  
+- Analytic Model Development  
+- Hybrid Enterprise Data Architecture Design  
