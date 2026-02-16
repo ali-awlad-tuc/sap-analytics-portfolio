@@ -1,11 +1,11 @@
 # SAP Enterprise Analytics Portfolio  
-SAP Analytics Cloud | SAP BW/4HANA | Enterprise Data Architecture  
+SAP Analytics Cloud | SAP BW/4HANA | SAP Datasphere | Hybrid Enterprise Architecture  
 
-This repository presents structured SAP Analytics implementations covering executive reporting, predictive modeling, integrated planning, and layered BW/4HANA data warehousing.
+This repository presents enterprise-style SAP Analytics implementations covering executive reporting, predictive modeling, integrated planning, layered data warehousing, and hybrid BW–Datasphere integration.
 
-Each project represents an independent enterprise-style solution designed around realistic business scenarios and implemented using SAP technologies.
+Each project represents an independent solution designed around realistic enterprise scenarios and implemented using SAP technologies.
 
-The focus is on translating business requirements into scalable, governance-ready analytics architectures.
+The focus is on building scalable, governance-ready analytics architectures across on-premise and cloud environments.
 
 ---
 
@@ -17,7 +17,7 @@ The focus is on translating business requirements into scalable, governance-read
 | 02 | SAC Predictive Analytics | Regression & Insight Generation | Smart Predict modeling, influencer analysis, validation |
 | 03 | SAC Integrated Planning & Forecasting | Enterprise Planning Architecture | Version management, allocations, multi actions, forecasting |
 | 04 | BW/4HANA Enterprise Data Foundation | Layered Data Warehouse Architecture | ADSO staging, InfoCube modeling, CompositeProvider, BW Query |
-| 05 | BW/4HANA & SAP Datasphere Hybrid Integration | (Upcoming) | Enterprise semantic modeling & integration |
+| 05 | BW/4HANA → Datasphere Integration | Hybrid On-Prem & Cloud Architecture | LSA++, ODP Delta, HANA Calc View, Datasphere modeling |
 | 06 | S/4HANA Business Process Analytics | (Upcoming) | Process-driven analytics integration |
 
 ---
@@ -84,18 +84,29 @@ Layered enterprise data warehouse architecture integrating SAP ERP Controlling d
 
 ---
 
-# Upcoming Projects
+## 05 — BW/4HANA to SAP Datasphere Integration  
+Folder: `05-bw4hana-datasphere-integration`
 
-## 05 — BW/4HANA & SAP Datasphere Hybrid Integration  
-Planned focus:
-- Advanced semantic modeling strategies  
-- Data virtualization concepts  
-- Hybrid architecture design patterns  
-- Enterprise modeling standards  
+Hybrid enterprise data architecture integrating SAP BW/4HANA with SAP Datasphere for cloud-based semantic modeling.
+
+**Key focus areas:**
+- ODP Delta extraction from SAP S/4HANA  
+- LSA++ layered BW modeling  
+- CompositeProvider semantic unification  
+- SAP HANA Star Join Calculation View  
+- Datasphere Replication Flow  
+- Fact & Dimension modeling in Datasphere  
+- Analytic Model for cloud consumption  
+- Hybrid on-premise and cloud governance  
+
+---
+
+# Upcoming Project
 
 ## 06 — S/4HANA Business Process Analytics  
 Planned focus:
 - End-to-end business process analytics  
+- Order-to-Cash & Procure-to-Pay integration perspective  
 - Process-driven reporting architecture  
 - Integration-aware analytics design  
 
@@ -106,10 +117,11 @@ Planned focus:
 Across all projects, the following principles were applied:
 
 - Clear separation between data acquisition, modeling, semantic, and consumption layers  
+- Layered LSA++ architecture in BW/4HANA  
+- Hybrid on-premise and cloud integration patterns  
 - KPI-driven and business-aligned analytics design  
 - Governance-aware configuration (validation, versioning, monitoring)  
-- Scalable and reusable modeling structures  
-- Integration-ready architecture design  
+- Reusable and scalable modeling structures  
 
 ---
 
@@ -128,13 +140,15 @@ Across all projects, the following principles were applied:
 - Allocation logic  
 - Forecasting configuration  
 
-## Data & Architecture
+## Data & Enterprise Architecture
 - SAP BW/4HANA modeling  
 - ADSO and InfoCube design  
-- Transformation and DTP configuration  
+- LSA++ layered architecture  
 - CompositeProvider modeling  
-- BW Query development  
-- SAP ERP data integration  
+- SAP HANA Calculation Views  
+- SAP Datasphere modeling  
+- ODP Delta integration  
+- Hybrid BW–Cloud architecture design  
 
 ---
 
@@ -154,9 +168,9 @@ Each project folder contains:
 
 # Implementation Context
 
-The solutions were developed within a structured SAP Analytics environment using enterprise-style business scenarios.
+The solutions were developed within structured SAP environments using enterprise-style business scenarios.
 
-All dashboards, predictive models, and data configurations were independently designed and implemented to simulate real SAP project delivery standards.
+All architectures, models, planning configurations, predictive scenarios, and dashboards were independently implemented to reflect real-world SAP analytics project standards.
 
 The system environment was provided by erp4students for educational purposes.
 
