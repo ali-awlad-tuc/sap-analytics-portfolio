@@ -3,7 +3,7 @@ SAP Analytics Cloud – Smart Predict Implementation
 
 ## Business Objective
 
-Design and implement a regression-based predictive analytics solution using SAP Analytics Cloud (Smart Predict) to estimate processor performance based on technical specifications.
+Design and implement a regression-based predictive solution using SAP Analytics Cloud (Smart Predict) to model and forecast processor performance based on structured technical specifications.
 
 The objective was to:
 
