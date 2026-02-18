@@ -24,6 +24,7 @@ This implementation reflects how predictive analytics can complement traditional
 ### Predictive Workflow Architecture
 
 End-to-End Flow:
+
 Structured Technical Dataset (Imported into SAP Analytics Cloud)  
 → Data Preparation & Validation  
 → Smart Predict Regression Model  
